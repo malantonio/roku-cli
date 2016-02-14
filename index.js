@@ -57,6 +57,8 @@ getRokuAddress(function (addr) {
   switch (command) {
     case 'help':
       return help()
+    case 'info':
+      return info(dev)
     case 'version':
       return version()
 
