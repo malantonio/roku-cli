@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 var debug = require('debug')('roku-cli:index.js')
 var Roku = require('roku')
 var fs = require('fs')

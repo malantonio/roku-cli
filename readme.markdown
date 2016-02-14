@@ -1,6 +1,6 @@
 # roku-cli
 
-WIP cli app to control a local Roku box.
+WIP cli app to control a local Roku box. Currently only tested on OS X.
 
 On first run, there will be a delay as `roku-cli` finds your local Roku via ssdp
 and stores the address in `~/.roku-cli.json`.
