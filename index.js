@@ -87,25 +87,14 @@ getRokuAddress(function (addr) {
       return press(dev, 'instantReplay')
     case 'type':
       return type(dev, argv._.join(' '))
-  }
+    case 'search': {
+      var terms
+      if (argv._.length)
+        terms = argv._.join(' ')
 
-  if (command === 'search') {
-    var terms
-    if (argv._.length) {
-      terms = argv._.join(' ')
+      return search(dev, terms)
     }
-
-    return search(dev, terms)
   }
-
-  if (command === 'launch')
-    return launch(dev, argv._.shift())
-  if (command === 'list')
-    return listApps(dev)
-  if (command === 'press')
-    return press(dev, argv._.shift())
-  if (command === 'replay')
-    return press(dev, 'instantReplay')
 
   if (validButtons.indexOf(command.toLowerCase()) > -1)
     return press(dev, command)
