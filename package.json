@@ -1,0 +1,22 @@
+{
+  "name": "roku-cli",
+  "version": "0.0.1",
+  "description": "Control a local Roku from the command line",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Adam Malantonio <adam.malantonio@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "debug": "2.2.0",
+    "home": "1.0.1",
+    "minimist": "1.2.0",
+    "node-ssdp": "2.7.0",
+    "roku": "0.2.0"
+  },
+  "bin": {
+    "roku": "./index.js"
+  }
+}
