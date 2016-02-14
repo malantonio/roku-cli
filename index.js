@@ -92,6 +92,7 @@ getRokuAddress(function (addr) {
       if (argv._.length)
         terms = argv._.join(' ')
 
+      debug('searching with terms: %s', terms)
       return search(dev, terms)
     }
   }
